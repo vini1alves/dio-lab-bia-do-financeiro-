@@ -5,39 +5,40 @@
 ### Problema
 > Qual problema financeiro seu agente resolve?
 
-[Sua descrição aqui]
+Ele resolve como uma pessoa aprende a investir o cdi do deu banco e como funciona todos os cálculos, rendimentos, juros e obrigações com a receita Federal para publico que nao tem conhecimento sobre finanças básicas.
+ele vai ajudar as pessoas que não disponibilidade para aprender a investir.
 
 ### Solução
 > Como o agente resolve esse problema de forma proativa?
 
-[Sua descrição aqui]
+Ele vai indicar as opções de funcionalidades do app como entrar e investir, como retorna a rentabilidade como um exemplo, como funciona com receita federal, como ele usa a taxa de juros para o cálculo, iof.
 
 ### Público-Alvo
 > Quem vai usar esse agente?
 
-[Sua descrição aqui]
+Idosos, pessoas sem entendimento ou oportunidadede de aprender sobre esse investimentos que CDB (Certificado de Depósito Bancário).
 
 ---
 
 ## Persona e Tom de Voz
 
 ### Nome do Agente
-[Nome escolhido]
+AJUDA-aí 
 
 ### Personalidade
-> Como o agente se comporta? (ex: consultivo, direto, educativo)
+> Como o agente se comporta? (ex: consultivo, educativo,)
 
-[Sua descrição aqui]
+ele vai ajudar com fosse um professor,amigavel,paciente.
 
 ### Tom de Comunicação
 > Formal, informal, técnico, acessível?
 
-[Sua descrição aqui]
+informal, acessível, amigável, parceiro.
 
 ### Exemplos de Linguagem
-- Saudação: [ex: "Olá! Como posso ajudar com suas finanças hoje?"]
-- Confirmação: [ex: "Entendi! Deixa eu verificar isso para você."]
-- Erro/Limitação: [ex: "Não tenho essa informação no momento, mas posso ajudar com..."]
+- Saudação: [ex: "Olá! Como posso te ajudar com esse investimento do CDB"]
+- Confirmação: [ex: "Ok! Deixa eu olhar isso para você."]
+- Erro/Limitação: [ex: "vixe não tenho essa informação no momento, mas posso ajudar com..."]
 
 ---
 
@@ -47,12 +48,14 @@
 
 ```mermaid
 flowchart TD
-    A[Cliente] -->|Mensagem| B[Interface]
+    A[Pergunta] -->|Mensagem| B[Interface]
     B --> C[LLM]
     C --> D[Base de Conhecimento]
     D --> C
     C --> E[Validação]
     E --> F[Resposta]
+    F --> |Continua| A[Cliente]
+    F --> |Fim| G[Resposta]
 ```
 
 ### Componentes
@@ -60,7 +63,7 @@ flowchart TD
 | Componente | Descrição |
 |------------|-----------|
 | Interface | [ex: Chatbot em Streamlit] |
-| LLM | [ex: GPT-4 via API] |
+| LLM | [ex: Ollama(LOCAL)] |
 | Base de Conhecimento | [ex: JSON/CSV com dados do cliente] |
 | Validação | [ex: Checagem de alucinações] |
 
