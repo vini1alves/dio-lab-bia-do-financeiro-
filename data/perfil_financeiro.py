@@ -1,12 +1,12 @@
 usuario = {
     "nome": "João Silva",
-    "idade": 32,
-    "profissao": "Analista de Sistemas",
-    "renda_mensal": 5000.00,
+    "idade": 45,
+    "profissao": "auxiliar operacional",
+    "renda_mensal": 2300.00,
     "perfil_investidor": "moderado",
-    "objetivo_principal": "Construir reserva de emergência",
-    "patrimonio_total": 15000.00,
-    "reserva_emergencia_atual": 10000.00,
+    "objetivo_principal": "Construir um plano de investimento",
+    "patrimonio_total": 5000.00,
+    "reserva_emergencia_atual": 3000.00,
     "aceita_risco": False,
     "metas": [
         {
@@ -17,7 +17,7 @@ usuario = {
         {
             "meta": "Entrada do apartamento",
             "valor_necessario": 50000.00,
-            "prazo": "2027-12"
+            "prazo": "2035-12"
         }
     ]
 }
