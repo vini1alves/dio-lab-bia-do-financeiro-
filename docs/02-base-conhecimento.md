@@ -68,7 +68,7 @@ usuario = {
 }
 
 # Exemplo de como acessar um dado:
-print(f"O objetivo de {usuario['nome']} é {usuario['objetivo_principal']}.")
+#print(f"O objetivo de {usuario['nome']} é {usuario['objetivo_principal']}.")
 ```
 ```python
 investimentos = [
@@ -132,6 +132,34 @@ data,descricao,categoria,valor,tipo
 2025-10-25,Combustível,transporte,250.00,saida
 
 ```
+```python
+nome_lista = usuario["nome"]
+
+while True:
+    tentar = (input("digite o nome do cliente:").strip())
+
+
+    if  tentar.title() == nome_lista:
+        print(f"acesso permitido{nome_lista}.")
+        break
+    else:
+        print(f"nome incorreto tente novamente")
+
+print("--resumo do cliente--")
+print(f"Dados do cliente:")
+print(f" nome: {usuario['nome']}")
+print(f"- Perfil: {usuario['perfil_investidor'].capitalize()}")
+print(f"- Saldo disponível: R$ {usuario['patrimonio_total']:,.2f}")
+
+print("\nÚltimas transações:")
+
+ultimas_transacoes = transacao.tail(5)
+for index, linha in ultimas_transacoes.iterrows():
+    # Convertendo a data para o formato brasileiro (DD/MM)
+    data_formatada = pd.to_datetime(linha['data']).strftime('%d/%m')
+    
+    print(f"- {data_formatada}: {linha['descricao']} - R$ {linha['valor']:.2f}")
+```
 
 ---
 
@@ -140,13 +168,19 @@ data,descricao,categoria,valor,tipo
 > Mostre um exemplo de como os dados são formatados para o agente.
 
 ```
-Dados do Cliente:
-- Nome: João Silva
+nome incorreto tente novamente
+acesso permitidoJoão Silva.
+--resumo do cliente--
+Dados do cliente:
+ nome: João Silva
 - Perfil: Moderado
-- Saldo disponível: R$ 5.000
+- Saldo disponível: R$ 5,000.00
 
 Últimas transações:
-- 01/11: Supermercado - R$ 450
-- 03/11: Streaming - R$ 55
+- 10/10: Restaurante - R$ 120.00
+- 12/10: Uber - R$ 45.00
+- 15/10: Conta de Luz - R$ 180.00
+- 20/10: Academia - R$ 99.00
+- 25/10: Combustível - R$ 250.00
 ...
 ```
