@@ -20,7 +20,7 @@ Descreva se usou os arquivos da pasta `data`, por exemplo:
 
 > Você modificou ou expandiu os dados mockados? Descreva aqui.
 
-Eu alterei o alguns dados do perfil eu mudei o tipo de arquivo json para python.
+Eu alterei o alguns dados do perfil e do produto eu mudei o tipo de arquivo json para python.
 
 ---
 
