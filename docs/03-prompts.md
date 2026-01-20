@@ -70,8 +70,6 @@ Não posso recomendar investimentos procure uma corretora de investimentos.
 
 ### Cenário 1: como funciona renda fixa?
 
-**Contexto:** [Situação do cliente]
-
 **Usuário:**
 ```
 O que é CDB
@@ -86,8 +84,6 @@ CDB (Certificado de Depósito Bancário) é um investimento de renda fixa onde v
 
 ### Cenário 2: como funciona o cálculo do juros?
 
-**Contexto:** [Situação do cliente]
-
 **Usuário:**
 ```
 como e calculado o juros do CDB?
@@ -100,8 +96,6 @@ O cálculo do CDB envolve a taxa acordada (prefixada, pós-fixada como % do CDI,
 ---
 
 ### Cenário 3: tipos de rendimentos renda fixa cdb
-
-**Contexto:** [Situação do cliente]
 
 **Usuário:**
 ```
