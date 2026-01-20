@@ -72,51 +72,60 @@ usuario = {
 ```
 ```python
 investimentos = [
-    {
-        "nome": "Tesouro Selic",
-        "categoria": "renda_fixa",
-        "risco": "baixo",
-        "rentabilidade": "100% da Selic",
-        "aporte_minimo": 30.00,
-        "indicado_para": "Reserva de emergência e iniciantes"
-    },
-    {
-        "nome": "CDB Liquidez Diária",
-        "categoria": "renda_fixa",
-        "risco": "baixo",
-        "rentabilidade": "102% do CDI",
-        "aporte_minimo": 100.00,
-        "indicado_para": "Quem busca segurança com rendimento diário"
-    },
-    {
-        "nome": "LCI/LCA",
-        "categoria": "renda_fixa",
-        "risco": "baixo",
-        "rentabilidade": "95% do CDI",
-        "aporte_minimo": 1000.00,
-        "indicado_para": "Quem pode esperar 90 dias (isento de IR)"
-    },
-    {
-        "nome": "Fundo Multimercado",
-        "categoria": "fundo",
-        "risco": "medio",
-        "rentabilidade": "CDI + 2%",
-        "aporte_minimo": 500.00,
-        "indicado_para": "Perfil moderado que busca diversificação"
-    },
-    {
-        "nome": "Fundo de Ações",
-        "categoria": "fundo",
-        "risco": "alto",
-        "rentabilidade": "Variável",
-        "aporte_minimo": 100.00,
-        "indicado_para": "Perfil arrojado com foco no longo prazo"
-    }
+  {
+    "nome": "CDB Liquidez Diária",
+    "categoria": "renda_fixa",
+    "risco": "baixo",
+    "rentabilidade": "100% a 105% do CDI",
+    "aporte_minimo": 1.00,
+    "indicado_para": "Quem busca segurança com rendimento diário e reserva de emergência"
+  },
+  {
+    "nome": "CDB Pós-fixado (Vencimento Longo)",
+    "categoria": "renda_fixa",
+    "risco": "baixo",
+    "rentabilidade": "110% a 120% do CDI",
+    "aporte_minimo": 1.00,
+    "indicado_para": "Investidores que buscam maximizar o retorno acompanhando a taxa Selic"
+  },
+  {
+    "nome": "CDB Prefixado",
+    "categoria": "renda_fixa",
+    "risco": "médio (risco de custo de oportunidade)",
+    "rentabilidade": "Taxa fixa (ex: 12% ao ano)",
+    "aporte_minimo": 50.00,
+    "indicado_para": "Quem acredita que a taxa de juros (Selic) vai cair no futuro"
+  },
+  {
+    "nome": "CDB IPCA+ (Híbrido)",
+    "categoria": "renda_fixa",
+    "risco": "baixo/médio",
+    "rentabilidade": "IPCA + 6% ao ano (exemplo)",
+    "aporte_minimo": 500.00,
+    "indicado_para": "Proteção contra a inflação e manutenção do poder de compra a longo prazo"
+  },
+  {
+    "nome": "CDB Escalonado (Progressivo)",
+    "categoria": "renda_fixa",
+    "risco": "baixo",
+    "rentabilidade": "Crescente (ex: de 100% a 115% do CDI)",
+    "aporte_minimo": 1.00,
+    "indicado_para": "Quem quer liquidez, mas deseja prêmios maiores por deixar o dinheiro investido por mais tempo"
+  },
+  {
+    "nome": "CDB de Banco Médio/Pequeno",
+    "categoria": "renda_fixa",
+    "risco": "médio (coberto pelo FGC)",
+    "rentabilidade": "115% a 130% do CDI",
+    "aporte_minimo": 500.00,
+    "indicado_para": "Investidores que buscam rentabilidade agressiva em renda fixa aceitando menor liquidez"
+  }
 ]
 
 # Exemplo: Filtrar apenas investimentos de baixo risco
-baixo_risco = [i["nome"] for i in investimentos if i["risco"] == "baixo"]
-print(f"Opções seguras: {baixo_risco}")
+'''baixo_risco = [i["nome"] for i in investimentos if i["risco"] == "baixo"]
+print(f"Opções seguras: {baixo_risco}")'''
+
 ```
 ```CSV
 data,descricao,categoria,valor,tipo
