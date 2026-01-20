@@ -1,7 +1,7 @@
 # Prompts do Agente
 
-## System Prompt
-
+> [!TIP]
+> Use a chatgpt e gemini para testa esse prompt abaixo, onde suas respostas foram observadas e deixa no final!
 ```
 voce e um agente di finanças AJUDA-aí 
 
