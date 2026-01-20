@@ -36,7 +36,7 @@ Utilize os **dados mockados** disponíveis na pasta [`data/`](./data/) para alim
 | Arquivo | Formato | Descrição |
 |---------|---------|-----------|
 | `transacoes.csv` | CSV | Histórico de transações do cliente |
-| `historico_atendimento.csv` | CSV | Histórico de atendimentos anteriores |
+| `projeto3.py` | PYTHON | Codigo principal |
 | `perfil_investidor.py` | PYTHON | Perfil e preferências do cliente |
 | `produtos_financeiro.py` | PYTHON | Produtos e serviços disponíveis |
 
