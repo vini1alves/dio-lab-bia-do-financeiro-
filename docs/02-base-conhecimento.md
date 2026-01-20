@@ -12,7 +12,7 @@ Descreva se usou os arquivos da pasta `data`, por exemplo:
 | `transacoes.csv` | CSV | Analisar padrão de gastos do cliente |
 
 > [!TIP]
-> alterei os arquivos de json para python!
+> alterei os arquivos de json para python e importei os arquivos .py para projeto principal!
 
 ---
 
