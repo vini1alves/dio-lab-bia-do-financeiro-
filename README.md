@@ -4,6 +4,24 @@
 
 **AJUDA-aí** é um agente de IA generativa desenvolvido para oferecer consultoria financeira personalizada e inteligente. O projeto foi criado como parte do Bootcamp Bradesco/DIO, representando uma evolução de chatbots reativos para assistentes proativos que antecipam necessidades financeiras dos usuários com o investimento de renda fixa CDB.
 
+---
+
+## Arquitetura
+
+### Diagrama
+
+```mermaid
+flowchart TD
+    A[Pergunta] -->|Mensagem| B[Interface]
+    B --> C[LLM]
+    C --> D[Base de Conhecimento]
+    D --> C
+    C --> E[Validação]
+    E --> F[Resposta]
+    F --> |Continua| A[Cliente]
+    F --> |Fim| G[Resposta]
+```
+
 ### 🎯 Objetivos
 
 - **Antecipar necessidades** financeiras ao de apenas responder perguntas!
