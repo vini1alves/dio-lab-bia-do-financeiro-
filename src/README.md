@@ -24,7 +24,8 @@ pandas
 
 ```bash
 # Instalar dependências
-pip install streamlit 
+pip install streamlit
+pip install google-genai
 
 # Rodar a aplicação
 streamlit run DIO/app.py
