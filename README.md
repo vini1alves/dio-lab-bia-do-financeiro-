@@ -137,14 +137,12 @@ A aplicação estará disponível em http://localhost:8501 pelo streamlit
 
 ```
 Usuário: "Oi Bia, como posso economizar mais este mês?"
-Bia: "Com base no seu histórico, identifiquei que você gasta em média R$ 450 
+AJUDA-aí: "Com base no seu histórico, identifiquei que você gasta em média R$ 450 
       em alimentação fora de casa. Que tal estabelecer uma meta de reduzir 
       isso para R$ 300? Preparei algumas dicas personalizadas para você..."
 
 Usuário: "Qual investimento você recomenda para mim?"
-Bia: "Analisando seu perfil moderado e horizonte de 5 anos, recomendo uma 
-      carteira diversificada com 60% em renda fixa e 40% em renda variável. 
-      Posso detalhar as opções disponíveis?"
+AJUDA-aí: "Considerando seu perfil moderado, a necessidade de liquidez para a reserva de emergência e o prazo relativamente curto para completá-la, minha recomendação principal é o CDB Liquidez Diária."
 ```
 
 ## 📊 Base de Conhecimento
