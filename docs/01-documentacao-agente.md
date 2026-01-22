@@ -63,8 +63,8 @@ flowchart TD
 | Componente | Descrição |
 |------------|-----------|
 | Interface | [Streamlit](link) |
-| LLM | Ollama(LOCAL) |
-| Base de Conhecimento | JSON/CSV com dados do cliente |
+| LLM | Gemini(API) |
+| Base de Conhecimento | PYTHON/CSV com dados do cliente |
 | Validação | Checagem de alucinações |
 
 ---
