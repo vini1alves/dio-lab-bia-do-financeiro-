@@ -12,6 +12,9 @@ src/
 └── requirements.txt    # Dependências
 ```
 
+```
+O ollama nao funcionou no meu computador por causa de memória.
+```
 ## Exemplo de requirements.txt
 
 ```
