@@ -40,7 +40,3 @@ investimentos = [
         "indicado_para": "Perfil arrojado com foco no longo prazo"
     }
 ]
-
-# Exemplo: Filtrar apenas investimentos de baixo risco
-baixo_risco = [i["nome"] for i in investimentos if i["risco"] == "baixo"]
-print(f"Opções seguras: {baixo_risco}")
