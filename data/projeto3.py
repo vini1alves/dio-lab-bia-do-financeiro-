@@ -34,3 +34,4 @@ for index, linha in ultimas_transacoes.iterrows():
     
     print(f"- {data_formatada}: {linha['descricao']} - R$ {linha['valor']:.2f}")
 
+
