@@ -1,4 +1,4 @@
-# 🤖 Bia do Financeiro - Agente Inteligente de Consultoria Financeira
+# 🤖 AJUDA-aí - Agente Inteligente de Consultoria Financeira
 
 ## 📋 Sobre o Projeto
 
