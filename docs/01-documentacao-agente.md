@@ -81,5 +81,5 @@ flowchart TD
 ### Limitações Declaradas
 > O que o agente NÃO faz?
 
-- não recomenda investimentos.
+- não indica em qual investimentos se deve aplicar.
 - não faz o investimentos automaticamente.
